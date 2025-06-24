@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paradise Tailor</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    .head {
+      height: 100px;
+      width: calc(100% - 20px);
+      border-top: 3px solid black;
+      border-bottom: 3px solid black;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    #logo {
+      height: 90px;
+      width: 90px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    .logo-name h1 {
+      margin: 0 10px;
+      font-size: 24px;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+    }
+
+    li {
+      margin: 0 15px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    li:hover {
+      text-decoration: underline;
+    }
+
+    svg {
+      height: 50px;
+      width: 50px;
+      margin-right: 20px;
+    }
+
+    .name {
+      text-align: center;
+      font-size: 32px;
+      margin: 20px 0;
+    }
+
+    .container {
+      height: 350px;
+      width: 100%;
+      background-image: url("1.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: myani 20s linear infinite;
+    }
+
+    @keyframes myani {
+      0% { background-image: url("1.png"); }
+      35% { background-image: url("2.png"); }
+      75% { background-image: url("3.png"); }
+    }
+
+    .heding {
+      text-align: center;
+      font-size: 32px;
+      color: darkblue;
+      margin: 40px 0 10px;
+    }
+
+    .help-img-div, .must-img-div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .help-img, .must-img {
+      width: 22%;
+      border-radius: 20px;
+      padding: 10px;
+    }
+
+    .help-img:hover, .must-img:hover {
+      border: 1px solid black;
+    }
+
+    .must-img-name {
+      display: block;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    .storimg {
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    .popu-div {
+      width: 100%;
+      height: 40px;
+      background-color: antiquewhite;
+      border: 1px dashed black;
+      margin: 10px 0;
+    }
+
+    .table {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 10px;
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
+
+    .table-th {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    #table {
+      width: 200px;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    #table a {
+      display: block;
+      margin: 5px 0;
+      color: black;
+      text-decoration: none;
+    }
+
+    #table a:hover {
+      text-decoration: underline;
+    }
+
+    .ap, .us {
+      height: 20px;
+      margin: 5px;
+    }
+
+    .add-main {
+      margin: 60px auto;
+      width: 800px;
+    }
+
+    .add {
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .add-img {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .boder {
+      border-bottom: 1px solid black;
+      width: 100px;
+      margin: 10px auto;
+    }
+
+    .adresh {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .help-img, .must-img {
+        width: 45%;
+      }
+
+      ul {
+        flex-wrap: wrap;
+      }
+
+      .table {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="head">
+    <div class="logo">
+      <img id="logo" src="logo.png" alt="Logo">
+      <div class="logo-name">
+        <h1>PARADISE</h1>
+        <h1>TAILOR</h1>
+      </div>
+    </div>
+    <ul>
+      <li>Tailoring</li>
+      <li>Sarees</li>
+      <li>Fabrics</li>
+      <li>Mens</li>
+      <li>Accessories</li>
+      <li>Blog</li>
+      <li>Contact</li>
+    </ul>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+      <path d="..."/>
+    </svg>
+  </div>
+
+  <h1 class="name">PARADISE TAILOR</h1>
+  <div class="container"></div>
+
+  <h2 class="heding">How can we help you?</h2>
+  <div class="help-img-div">
+    <img class="help-img" src="4.png" alt="">
+    <img class="help-img" src="5.png" alt="">
+    <img class="help-img" src="6.png" alt="">
+    <img class="help-img" src="7.png" alt="">
+  </div>
+
+  <h2 class="heding">Must Have Categories</h2>
+  <div class="must-img-div">
+    <div><img class="must-img" src="8.png" alt=""><b class="must-img-name">BLOUSE</b></div>
+    <div><img class="must-img" src="9.png" alt=""><b class="must-img-name">KURTI</b></div>
+    <div><img class="must-img" src="10.png" alt=""><b class="must-img-name">SALWAR KAMEEZ</b></div>
+    <div><img class="must-img" src="11.png" alt=""><b class="must-img-name">LEHENGA</b></div>
+  </div>
+
+  <img class="storimg" src="13.png" alt="Store Image">
+
+  <div class="popu-div"></div>
+
+  <div class="table">
+    <div id="table">
+      <div class="table-th">Cloud Tailor</div>
+      <a>About</a>
+      <a>Our Stores</a>
+      <a>Community</a>
+      <a>Reviews</a>
+      <a>Blogs</a>
+    </div>
+    <div id="table">
+      <div class="table-th">Quick Links</div>
+      <a>Categories</a>
+      <a>Sarees</a>
+      <a>Fabric</a>
+      <a>Mother & Daughter</a>
+      <a>Maternity Dress</a>
+    </div>
+    <div id="table">
+      <div class="table-th">Support</div>
+      <a>How To Buy</a>
+      <a>Track Orders</a>
+      <a>FAQs</a>
+      <a>Rewards</a>
+    </div>
+    <div id="table">
+      <div class="table-th">Terms and Policies</div>
+      <a>Refund & Pricing</a>
+      <a>Terms of Use</a>
+      <a>Shipping Policies</a>
+      <a>Privacy Policy</a>
+      <a>Payment Terms</a>
+    </div>
+    <div id="table">
+      <div class="table-th">Get in Touch</div>
+      <a>Email: yourmail@example.com</a>
+      <a>Phone: 9099442401</a>
+      <img class="ap" src="appstore.png" alt="App Store">
+      <img class="ap" src="playstore.png" alt="Play Store">
+    </div>
+    <div id="table">
+      <div class="table-th">Follow Us</div>
+      <img class="us" src="23.png.png" alt="">
+      <img class="us" src="24.png.png" alt="">
+      <img class="us" src="25.png.png" alt="">
+      <img class="us" src="26.png.png" alt="">
+      <img class="us" src="27.png.png" alt="">
+      <img class="us" src="28.png.png" alt="">
+      <img class="us" src="29.png.png" alt="">
+      <img class="us" src="30.png.png" alt="">
+    </div>
+  </div>
+
+  <div class="add-main">
+    <div class="add">
+      <img class="add-img" src="logo.png" alt="Logo">
+      <h2>PARADISE TAILOR</h2>
+      <div class="boder"></div>
+      <div class="adresh">
+        <h2>Address:</h2>
+        <b>Yoginagar Main Road, Paradise Tailor, GONDAL</b>
+      </div>
+      <div class="boder"></div>
+      <div>
+        <b>Mobile: 9099442401</b><br>
+        <b>Owner: PANKAJ BHIY</b>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
